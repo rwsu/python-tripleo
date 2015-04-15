@@ -39,9 +39,9 @@ Python library for code shared by TripleO CLI and Tuskar UI.
 %files
 %license LICENSE
 %doc README.rst AUTHORS ChangeLog
-%{python2_sitelib}/rdo_ramdisk_tools*
-%exclude %{python2_sitelib}/rdo_ramdisk_tools/test*
-%{_bindir}/ironic-cardiff
+%{python2_sitelib}/tripleo_common*
+%exclude %{python2_sitelib}/tripleo_common/test*
+
 
 %changelog
 * Wed Apr 15 2015 Jan Provaznik <jprovazn@redhat.com> - 0.1
