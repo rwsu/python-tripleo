@@ -1,7 +1,7 @@
 %{?!_licensedir:%global license %%doc}
 
 Name:           tripleo-common
-Summary:        Python library for code shared by TripleO CLI and Tuskar UI.
+Summary:        Python library for code used by TripleO projects.
 Version:        0.1
 Release:        1%{?dist}
 License:        ASL 2.0
@@ -15,7 +15,6 @@ BuildRequires:  python-setuptools
 BuildRequires:  python2-devel
 BuildRequires:  python-pbr
 Requires: python-heatclient
-Requires: python-tuskarclient
 
 
 %prep
@@ -34,7 +33,7 @@ rm -rf {test-,}requirements.txt tools/{pip,test}-requires
 
 
 %description
-Python library for code shared by TripleO CLI and Tuskar UI.
+Python library for code used by TripleO projects.
 
 %files
 %license LICENSE
