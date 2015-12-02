@@ -1,14 +1,14 @@
 %{?!_licensedir:%global license %%doc}
 
-Name:           tripleo-common
+Name:           python-tripleo
 Summary:        Python library for code used by TripleO projects.
-Version:        0.1
-Release:        1%{?dist}
+Version:        XXX
+Release:        XXX
 License:        ASL 2.0
 Group:          System Environment/Base
-URL:            https://github.com/rdo-management/tripleo-common
+URL:            https://github.com/openstack/tripleo
 
-Source0: https://pypi.python.org/packages/source/t/tripleo-common/tripleo-common-%{version}.tar.gz
+Source0: https://pypi.python.org/packages/source/p/python-tripleo/python-tripleo-%{version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  python-setuptools
@@ -38,11 +38,8 @@ Python library for code used by TripleO projects.
 %files
 %license LICENSE
 %doc README.rst AUTHORS ChangeLog
-%{python2_sitelib}/tripleo_common*
-%exclude %{python2_sitelib}/tripleo_common/test*
+%{python2_sitelib}/python_tripleo*
+%exclude %{python2_sitelib}/python_tripleo/test*
 
 
 %changelog
-* Wed Apr 15 2015 Jan Provaznik <jprovazn@redhat.com> - 0.1
-- Initial package build
-

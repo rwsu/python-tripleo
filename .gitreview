@@ -1,5 +1,5 @@
 [gerrit]
 host=review.gerrithub.io
 port=29418
-project=openstack-packages/tripleo-common
+project=openstack-packages/python-tripleo
 defaultbranch=rpm-master
